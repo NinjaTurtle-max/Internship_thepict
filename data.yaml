@@ -1,0 +1,9 @@
+# D:\Parking Detection.v1i.yolov11\data.yaml
+path: D:/Parking Detection.v1i.yolov11/slicing_data # 리사이징된 데이터 루트
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['car']
+

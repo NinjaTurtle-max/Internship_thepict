@@ -1,0 +1,19 @@
+# 데이터셋 제외 (이미지가 너무 많음)
+train/
+valid/
+test/
+data/
+
+# 학습 결과물 및 가중치 파일 제외
+runs/
+*.pt
+*.weights
+*.cache
+*.PNG
+*.jpg
+
+
+# 파이썬 캐시 및 가상환경
+__pycache__/
+venv/
+.venv/
