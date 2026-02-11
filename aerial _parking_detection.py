@@ -1,3 +1,5 @@
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 from ultralytics import YOLO
 
 def train_model():
@@ -6,9 +8,9 @@ def train_model():
 
     # 2. 학습 실행
     model.train(
-        data="data.yaml",      # 데이터셋 설정 파일 경로
+        data=r"D:\Parking Detection.v1i.yolov11\data.yaml",      # 데이터셋 설정 파일 경로
         epochs=100,
-        imgsz=640,
+        imgsz=520,
         batch=16,
         device=0,
         project="runs/detect",

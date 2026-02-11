@@ -1,4 +1,6 @@
 import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import os
 from PIL import Image
 from collections import Counter
 from tqdm import tqdm
@@ -47,5 +49,5 @@ def analyze_resolutions(root_path):
     print("="*40)
 
 # --- 실행부 ---
-target_path = r"D:\Parking Detection.v1i.yolov11\datasat"
+target_path = os.path.join(BASE_DIR, "sliced_dataset")
 analyze_resolutions(target_path)

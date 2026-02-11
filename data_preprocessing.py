@@ -1,8 +1,10 @@
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 import glob
 import os
 
 # 1. 경로 설정
-base_path = r"D:\7053442\Annotations\Annotations\Yolo"
+base_path = os.path.join(BASE_DIR, "Yolo")
 
 def merge_vehicle_classes(directory):
     # 모든 하위 폴더의 .txt 파일 탐색
