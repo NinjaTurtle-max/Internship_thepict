@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 # 1. 경로 설정 (전처리 Step 4에서 생성한 640 슬라이싱 데이터셋의 설정 파일)
 # [인수인계 노트] 이 YAML 파일에 데이터셋의 실제 위치가 정의되어 있습니다.
-DATA_YAML_PATH = r"D:\Parking Detection.v1i.yolov11\high altitude\data.yaml"
+DATA_YAML_PATH = r"D:\Parking Detection.v1i.yolov11\high altitude\src_high\ML_Pipeline_high\data.yaml"
 
 def train_model():
     """
