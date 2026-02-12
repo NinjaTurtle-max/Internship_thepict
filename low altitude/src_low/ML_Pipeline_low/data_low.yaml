@@ -1,0 +1,15 @@
+# [인수인계 노트] 
+# 목적: 학습/검증/테스트 데이터의 경로와 탐지 객체 정보를 정의합니다.
+# 주의: 'path'는 절대 경로로 지정되어 있으므로, 서버나 다른 PC 이동 시 수정이 필요합니다.
+
+# 1. 데이터셋 루트 경로 (전처리 3단계에서 생성된 슬라이싱 데이터셋 위치)
+path: D:/Parking Detection.v1i.yolov11/low altitude/sliced_dataset
+
+# 2. 이미지 폴더 상대 경로 (root path 기준)
+train: train/images
+val: valid/images
+test: test/images
+
+# 3. 클래스 정보
+nc: 1              # 클래스 개수 (Vehicle 통합 시 1개)
+names: ['car']     # 클래스 이름 리스트

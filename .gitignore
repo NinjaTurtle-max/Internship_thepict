@@ -1,19 +1,36 @@
-# 데이터셋 제외 (이미지가 너무 많음)
-train/
-valid/
-test/
-data/
+# Datasets
+**/data_high/
+**/data_low/
+**/sliced_640_dataset/
+**/sliced_data/
+**/data/
+**/annotations/
 
-# 학습 결과물 및 가중치 파일 제외
-runs/
+# Model weights
 *.pt
-*.weights
-*.cache
-*.PNG
+*.pth
+*.onnx
+
+# Training outputs
+**/runs/
+results.csv
 *.jpg
+*.png
 
-
-# 파이썬 캐시 및 가상환경
+# Python
 __pycache__/
-venv/
+*.py[cod]
+*$py.class
 .venv/
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
